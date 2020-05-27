@@ -1,11 +1,13 @@
 # crypterjs
 Tool de chiffrement AES en node.js
 
+- AVANT TOUT LANCEMENT, MODIFIEZ PSEUDO, MOT DE PASSE DANS LES FICHIERS : crypter.js | decrypt.js ⚠️
+
 > Lancement : node crypter.js
-indiquez les informations demandées, en ajoutant le path du dossier où vous voulez chiffrer les fichiers.
+indiquez les informations demandées, en ajoutant le path du dossier où vous voulez chiffrer les fichiers. exemple : 
+- C:/Utilisateur/Desktop/Dossier/
+- /home/bxsic/Bureau/Dossier/
 
-> Editez le "crypter.js" en changeant le mot de passe & le pseudo
+> Pour déchiffrer les données : "pseudo_key.js"; vous indiquez la clé utilisée (dans keys.txt - Utilisez la bonne clé !) ainsi que votre pseudo mit lors de l'édit dans crypter.js.
 
-> Pour déchiffrer les données : "pseudo_key.js"; vous indiqué la clé utilisée (dans keys.txt) ainsi que votre pseudo mit dans crypter.js
-
-> utilisez la clé dans le fichier json qui s'est auto-crée pour utiliser le tool "decrypt.js"
+> Utilisez la clé dans le fichier json qui s'est auto-crée pour utiliser le tool "decrypt.js".
