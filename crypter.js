@@ -6,7 +6,10 @@ var isDirectory = require('isdir-async');
 const ora = require('ora');
 const readlineSync = require('readline-sync');
 const spinner = ora().start();
-const pseudokey = "VOTRE PSEUDO";
+
+const pseudokey = "VOTRE PSEUDO";       // A MODIFIER
+const motdepasse = "votremotdepasse";   // A MODIFIER
+
 var now = new Date();                   // date
 var annee   = now.getFullYear();
 var mois    = now.getMonth() + 1;
@@ -18,7 +21,7 @@ console.log("CRYPTER - BXSIC")
 var confirm = readlineSync.question('Souhaitez-vous réellement chiffrer vos données ? oui/non \n>> ');  // confirmation
 if(confirm == "oui"){
     var mdp_confirm = readlineSync.question("\nSaisissez votre mot de passe : \n>> ");
-    if(mdp_confirm == "mdp"){
+    if(mdp_confirm == motdepasse){
         spinner.succeed("Script lancé avec succès, veuillez patienter...");
         var fichier_key = "keys.txt";
         var key1 = CryptoJS.AES.encrypt(key, pseudokey).toString();
